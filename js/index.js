@@ -1,4 +1,25 @@
-// define classes here
+class Smartphone {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+
+  getDescription() {
+    return `The ${this.name} costs ${this.price}`;
+  }
+}
+
+class Android extends Smartphone {
+  getVersion() {
+    return 12;
+  }
+}
+
+class iOS extends Smartphone {
+  getVersion() {
+    return 15;
+  }
+}
 
 // Sample usage - do not modify
 const galaxy = new Android("Galaxy", 400);
